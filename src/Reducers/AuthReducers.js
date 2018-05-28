@@ -7,6 +7,11 @@ import {
 
 const initialState = {
   loggedIn: false,
+  user: {},
+  loginAction: () => {},
+  logoutAction: () => {},
+  history: {},
+  loading: false,
 };
 
 export default (state = initialState, action) => {
