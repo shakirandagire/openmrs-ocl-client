@@ -5,3 +5,4 @@ export const LOGGED_OUT = '[auth] logout';
 export const LOGOUT_FAILED = '[auth] logout failed';
 export const FETCH_SOURCES = '[sources] fetch sources';
 export const IS_FETCHING = '[ui] toggle spinner';
+export const FETCH_CONCEPTS = '[sources] fetch sources';

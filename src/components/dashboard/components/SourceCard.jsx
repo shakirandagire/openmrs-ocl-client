@@ -4,7 +4,6 @@ const SourceCard = (source) => {
   const {
     source: {
       name,
-      url,
       versions_url,
       concepts_url,
       owner,
@@ -25,7 +24,7 @@ const SourceCard = (source) => {
             </a>
           </div>
           <div className="source-name col-12 mt-3">
-            <a href={`https://www.openconceptlab.com${url}`}>
+            <a href={`/dashboard/sources/${owner}/${name}`}>
               <h6 className="text-left">{name}</h6>
             </a>
           </div>

@@ -8,6 +8,8 @@ import './App.css';
 import Login from './components/Login';
 import Authenticate from './components/Auth';
 import SourceSearch from './components/dashboard/container/SourceSearch';
+import Concepts from './components/dashboard/container/Concepts';
+import SourceInformation from './components/dashboard/container/SourceInformation';
 
 const App = () => (
   <Provider store={store}>
@@ -18,6 +20,8 @@ const App = () => (
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/dashboard" component={Authenticate(SourceSearch)} />
+          <Route exact path="/dashboard/concepts/:organisation/:name" component={Authenticate(Concepts)} />
+          <Route exact path="/dashboard/sources/:organisation/:name" component={Authenticate(SourceInformation)} />
         </Switch>
       </div>
     </BrowserRouter>
